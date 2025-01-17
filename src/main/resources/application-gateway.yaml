@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: ms-order
+          uri: http://localhost:8081
+          predicates:
+            - Path=/msorder/**
+          filters:
+            - RewritePath=/msorder/(?<segment>.*), /$\{segment}
+        - id: ms-inventory
+          uri: http://localhost:8082
+          predicates:
+            - Path=/msinventory/**
+          filters:
+            - RewritePath=/msinventory/(?<segment>.*), /$\{segment}
