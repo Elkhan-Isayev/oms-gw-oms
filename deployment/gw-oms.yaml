@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: gw-oms
-          image: rinsler/gw-oms:latest
+          image: rinsler/oms-gw-oms:latest
           ports:
             - containerPort: 8080
           env:
