@@ -40,9 +40,9 @@ public class GlobalInterceptorConfig implements GlobalFilter {
 //        String path = uri.getPath();
 //        if (path != null) {
 //            List<String> excludeds = Arrays.asList(
-//                    "/auth/login",
-//                    "/auth/logout",
-//                    "/auth/refresh");
+//                    "/msauth/login",
+//                    "/msauth/logout",
+//                    "/msauth/refresh");
 //            for (String excluded : excludeds) {
 //                if (path.contains(excluded)) {
 //                    return true;
